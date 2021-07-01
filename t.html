@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+</head>
+
+<style>
+
+body {
+  
+  font-family: "Asap", sans-serif;
+  color:#989898;
+  margin:1px;
+  font-size:10px;
+  
+  
+}
+
+.row{
+  margin-top: 1px;
+}
+
+#demo {
+  height:100%;
+  position:relative;
+  overflow:hidden;
+}
+
+
+.green{
+  background-color:#6fb936;
+}
+        .thumb{
+            margin-bottom: 30px;
+        }
+        
+        .page-top{
+            margin-top:85px;
+        }
+
+   
+img.zoom {
+    width: 100%;
+    height: 200px;
+    border-radius:5px;
+    object-fit:cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+        
+ 
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+    .modal-header {
+   
+     border-bottom: none;
+}
+    .modal-title {
+        color:#000;
+    }
+    .modal-footer{
+      display:none;  
+    }
+
+
+    @import url("https://fonts.googleapis.com/css?family=Codystar:300&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Codystar";
+  
+  background-image: url("images/dump.png.jpg");
+}
+
+.neons {
+  margin-top: 1px;
+  text-align: center;
+}
+
+.neons h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+
+
+@-webkit-keyframes glow {
+  from {
+    color: #fff;
+    text-shadow: 0 0 10px #D10000, 0 0 20px orange, 0 0 30px #D10000, 0 0 40px orange, 0 0 50px orange, 0 0 60px orange, 0 0 70px orange, 0 0 90px #D10000;
+  }
+  to {
+    color: gray;
+    text-shadow: 0 0 20px #D10000, 0 0 30px #00fff2, 0 0 40px #D10000, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+  }
+}    
+
+/*#00fff2*/
+
+
+
+
+</style>
+
+<script>
+
+$(document).ready(function(){
+  $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+    
+    $(".zoom").hover(function(){
+		
+		$(this).addClass('transition');
+	}, function(){
+        
+		$(this).removeClass('transition');
+	});
+});
+    
+</script>
+<body>
+
+  
+   <!-- Page Content -->
+
+
+
+   <div class="container page-top">
+
+   
+
+
+    <div class="container">
+      <div class="row">
+         <div class="neons col-12">
+            <h1><em>Gallery</em></h1>
+         </div>
+      </div>
+   </div>
+    
+
+    <div class="row">
+
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="images/ever1.png.jpg" class="fancybox" rel="ligthbox">
+                <img  src="images/ever1.png.jpg" class="zoom img-fluid "  alt="">
+               
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="images/ever2.png.jpg"  class="fancybox" rel="ligthbox">
+                <img  src="images/ever2.png.jpg" class="zoom img-fluid"  alt="">
+            </a>
+        </div>
+
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a href="images/ever3.png.jpg" class="fancybox" rel="ligthbox">
+              <img  src="images/ever3.png.jpg" class="zoom img-fluid "  alt="">
+          </a>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a href="images/ever4.png.jpg" class="fancybox" rel="ligthbox">
+              <img  src="images/ever4.png.jpg" class="zoom img-fluid "  alt="">
+          </a>
+      </div>
+      
+       <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a href="images/ever6.png.jpeg" class="fancybox" rel="ligthbox">
+              <img  src="images/ever6.png.jpeg" class="zoom img-fluid "  alt="">
+          </a>
+      </div>
+
+
+            
+      <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+        <a href="images/ever8.png1.jpg" class="fancybox" rel="ligthbox">
+            <img  src="images/ever8.png1.jpg" class="zoom img-fluid "  alt="">
+        </a>
+    </div>
+    
+     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+        <a href="images/ever2.png.jpg" class="fancybox" rel="ligthbox">
+            <img  src="images/ever2.png.jpg" class="zoom img-fluid "  alt="">
+        </a>
+    </div>
+    
+     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+        <a href="images/ever4.png.jpg" class="fancybox" rel="ligthbox">
+            <img  src="images/ever4.png.jpg" class="zoom img-fluid "  alt="">
+        </a>
+    </div>
+    
+    
+   
+   
+</div>
+
+
+
+
+</div>
+
+
+<div class="wrapper">
+  <div class="candles">
+    <div class="light__wave"></div>
+    <div class="candle1">
+      <div class="candle1__body">
+        <div class="candle1__eyes">
+          <span class="candle1__eyes-one"></span>
+          <span class="candle1__eyes-two"></span>
+        </div>
+        <div class="candle1__mouth"></div>
+      </div>
+      <div class="candle1__stick"></div>
+    </div>
+    
+    <div class="candle2">
+      <div class="candle2__body">
+        <div class="candle2__eyes">
+          <div class="candle2__eyes-one"></div>
+          <div class="candle2__eyes-two"></div>
+        </div>
+      </div>
+      <div class="candle2__stick"></div>
+    </div>
+    <div class="candle2__fire"></div>
+    <div class="sparkles-one"></div>
+    <div class="sparkles-two"></div>
+    <div class="candle__smoke-one">
+
+    </div>
+    <div class="candle__smoke-two">
+
+    </div>
+    
+  </div>
+  <div class="floor">
+  </div>
+  
+
+</div>
+
+
+  
+</body>
+</html>
